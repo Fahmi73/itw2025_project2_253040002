@@ -96,8 +96,7 @@ body::-webkit-scrollbar {
     /* border: 5px solid blue; */
     /* max-width: 700px; */
     /* height: 320px; */
-    margin: auto;
-    max-height: 400px;
+    margin: 0 auto;
     /* margin-left: 6rem; */
 }
 
