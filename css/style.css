@@ -131,10 +131,6 @@ body::-webkit-scrollbar {
     height: 60px;
 }
 
-.about_section {
-    border-bottom: 10px solid white;
-}
-
 .text-justify {
     text-align: justify;
 }
@@ -147,8 +143,12 @@ body::-webkit-scrollbar {
     height: auto;
     padding-bottom: 20px;
     border-top: 10px solid white;
-    background-color: #90ab8b;
+    background-color: #778873;
     /* border: 5px solid red; */
+}
+
+.service_container {
+    margin-top: 50px;
 }
 
 .box {
@@ -222,6 +222,10 @@ body::-webkit-scrollbar {
 /* Akhir Services */
 
 /* Product */
+.product_section {
+    border-top: 10px solid white;
+    background-color: #90ab8b;
+}
 
 .product_container {
     max-height: 2000px;
