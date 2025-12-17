@@ -122,12 +122,21 @@ body::-webkit-scrollbar {
 
 /* About */
 .about_section {
-    height: 600px;
+    max-height: 1024px;
     padding: 60px 0;
+}
+
+.box_about {
+    width: 250px;
+    height: 60px;
 }
 
 .about_section {
     border-bottom: 10px solid white;
+}
+
+.text-justify {
+    text-align: justify;
 }
 
 /* Akhir About */
@@ -209,4 +218,65 @@ body::-webkit-scrollbar {
 }
 
 
+
 /* Akhir Services */
+
+/* Product */
+
+.product_container {
+    max-height: 2000px;
+}
+
+.item_card {
+    max-width: 300px;
+}
+
+.icons1,
+.icons2,
+.icons3,
+.icons4 {
+    top: 70px;
+    right: 10px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.discount {
+    left: 0;
+    top: 0;
+}
+
+.btn_product1,
+.btn_product2,
+.btn_product3,
+.btn_product4 {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.item1:hover .icons1,
+.item1:hover .btn_product1 {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.item2:hover .icons2,
+.item2:hover .btn_product2 {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.item3:hover .icons3,
+.item3:hover .btn_product3 {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.item4:hover .icons4,
+.item4:hover .btn_product4 {
+    opacity: 1;
+    cursor: pointer;
+}
