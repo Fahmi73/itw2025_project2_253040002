@@ -170,6 +170,10 @@ body::-webkit-scrollbar {
     box-shadow: 0 0 25px rgba(20, 27, 202, 17);
 }
 
+.our-services p {
+    text-align: justify;
+}
+
 .our-services .icon {
     margin-bottom: -20px;
     transform: translateY(-50%);
