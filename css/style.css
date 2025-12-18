@@ -239,6 +239,10 @@ body::-webkit-scrollbar {
     max-width: 300px;
 }
 
+.item_card {
+    overflow: hidden;
+}
+
 .icons1,
 .icons2,
 .icons3,
@@ -247,6 +251,7 @@ body::-webkit-scrollbar {
     right: 10px;
     opacity: 0;
     transition: 0.3s;
+    transform: translateX(50px);
 }
 
 .discount {
@@ -263,28 +268,33 @@ body::-webkit-scrollbar {
     right: 0;
     opacity: 0;
     transition: 0.3s;
+    transform: translateY(50px);
 }
 
 .item1:hover .icons1,
 .item1:hover .btn_product1 {
     opacity: 1;
     cursor: pointer;
+    transform: translate(0);
 }
 
 .item2:hover .icons2,
 .item2:hover .btn_product2 {
     opacity: 1;
     cursor: pointer;
+    transform: translate(0);
 }
 
 .item3:hover .icons3,
 .item3:hover .btn_product3 {
     opacity: 1;
     cursor: pointer;
+    transform: translate(0);
 }
 
 .item4:hover .icons4,
 .item4:hover .btn_product4 {
     opacity: 1;
     cursor: pointer;
+    transform: translate(0);
 }
