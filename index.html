@@ -378,49 +378,53 @@
 
     <!-- Contact -->
 
-    <section id="contact">
+    <section id="contact" class="d-flex align-items-center">
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-6 m-auto">
                     <div class="card">
                         <div class="card-body">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="head text-center text-white py-3 rounded-4">
-                                        <h3>Contact Us</h3>
-                                    </div>
-                                </div>
+                            <div class="head text-center text-white py-3 rounded-4 bg-primary">
+                                <h3>Contact Us</h3>
                             </div>
-                            <div class="form p-3">
-                                <div class="form_row d-flex flex-row my-5">
-                                    <div class="input_form col-lg-6 me-3">
-                                        <input type="text" class="effect_1" placeholder="First Name">
-                                        <span class="focus_border"></span>
-                                    </div>
 
-                                    <div class="input_form col-lg-6">
-                                        <input type="text" class="effect_1" placeholder="Last Name">
-                                        <span class="focus_border"></span>
+
+                            <form name="submit-to-google-sheet">
+                                <div class="form p-3">
+                                    <div class="allert bg-primary text-white p-2 rounded-2 text-center"><strong>Terima
+                                            kasih!</strong> pesan
+                                        Anda
+                                        telah
+                                        terkirim</div>
+                                    <div class="form_row d-flex flex-row my-5">
+                                        <div class="input_form col-lg-6 me-3">
+                                            <input type="text" name="firstname" class="effect_1 w-100"
+                                                placeholder="First Name">
+                                        </div>
+                                        <div class="input_form col-lg-6">
+                                            <input type="text" name="lastname" class="effect_1 w-100"
+                                                placeholder="Last Name">
+                                        </div>
+                                    </div>
+                                    <div class="form_row pb-4">
+                                        <div class="input_form col-lg-12">
+                                            <input type="email" name="email" class="effect_1 w-100" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="form_row pt-5 mb-3">
+                                        <div class="input_form col-lg-12">
+                                            <input type="text" name="message" class="effect_1 w-100"
+                                                placeholder="Your Messages">
+                                        </div>
+                                    </div>
+                                    <div class="form-row pt-4">
+                                        <div class="col-lg-4">
+                                            <button type="submit" class="btn submitbtn btn-primary">Send
+                                                Messages</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form_row pb-4">
-                                    <div class="input_form col-lg-12">
-                                        <input type="text" class="effect_1" placeholder="Email">
-                                        <span class="focus_border"></span>
-                                    </div>
-                                </div>
-                                <div class="form_row pt-5 mb-3">
-                                    <div class="input_form col-lg-12">
-                                        <input type="text" class="effect_1" placeholder="Your Messages">
-                                        <span class="focus_border"></span>
-                                    </div>
-                                </div>
-                                <div class="form-row pt-4">
-                                    <div class="col-lg-4">
-                                        <button class="btn btn-primary">Send Messages</button>
-                                    </div>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -440,6 +444,38 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/53436f57b5.js" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzCf1eco0sFopdN1jrhLEXeyQKWaySHub7Wl8RrvonuSmdiE56fxPh8L0f4MbeRTe_a/exec'
+        const form = document.forms['submit-to-google-sheet'];
+        const btnSubmit = document.querySelector(".submitbtn");
+        const alert = document.querySelector(".allert");
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            btnSubmit.innerHTML = "<div class='loader'></div>"
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    console.log('Success!', response);
+                    alert.classList.toggle("enabled");
+                    btnSubmit.innerHTML = "Done";
+                    setTimeout(() => {
+                        btnSubmit.innerHTML = "Send Messages"
+                        alert.classList.toggle("enabled");
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    alert.innerHTML = "<strong>Maaf!</strong> pesan Anda tidak terkirim"
+                    btnSubmit.innerHTML = "Done";
+                    alert.classList.toggle("enabled");
+                    setTimeout(() => {
+                        btnSubmit.innerHTML = "Send Messages"
+                        alert.classList.toggle("enabled");
+                    }, 5000);
+                })
+        })
+    </script>
 </body>
 
 </html>
