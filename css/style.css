@@ -250,7 +250,7 @@ body::-webkit-scrollbar {
     top: 70px;
     right: 10px;
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.5s;
     transform: translateX(50px);
 }
 
@@ -267,7 +267,7 @@ body::-webkit-scrollbar {
     left: 0;
     right: 0;
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.5s;
     transform: translateY(50px);
 }
 
