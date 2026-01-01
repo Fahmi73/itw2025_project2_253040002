@@ -9,7 +9,7 @@ body::-webkit-scrollbar {
 /* Navbar */
 .navbar {
     height: 80px;
-    background-color: #fff;
+    background-color: #89D2DC;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin: 20px;
     border-radius: 20px;
@@ -17,7 +17,7 @@ body::-webkit-scrollbar {
 }
 
 .login-button {
-    background-color: #009970;
+    background-color: #101D42;
     color: #fff;
     font-size: 14px;
     padding: 8px 20px;
@@ -28,8 +28,9 @@ body::-webkit-scrollbar {
 
 .navbar-brand {
     font-weight: 500;
-    color: #009970;
+    color: #778873;
     font-size: 24px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
     transition: 0.3s color;
 }
 
@@ -90,27 +91,21 @@ body::-webkit-scrollbar {
     font-family: "Zen Dots", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: #000;
+    text-shadow: 1px 1px 2px #fff;
 }
 
-/* .hero_card_container {
-    border: 5px solid blue; */
-/* max-width: 700px; */
-/* height: 320px; */
-/* margin: 0 auto; */
-/* margin-left: 6rem;
-} */
 
 .hero {
-    /* border: 5px solid red; */
     width: 100%;
     height: 800px;
     background-size: cover;
     background-image: url("../img/spacejoy-RqO6kwm4tZY-unsplash.jpg");
-    border-bottom: 10px solid white;
+    border-bottom: 2px solid #000;
 }
 
-.hero_card2 {
-    width: 400px;
+.hero_card_container {
+    background-color: #fff;
 }
 
 .next_icon,
@@ -123,12 +118,64 @@ body::-webkit-scrollbar {
 /* About */
 .about_section {
     max-height: 1024px;
-    padding: 60px 0;
+    /* padding: 60px 0; */
+
+}
+
+.inner_about_section {
+    width: 100%;
+    background-image: url("../img/svg_asset/blob-scene-haikei6.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .box_about {
-    width: 250px;
+    width: 300px;
+    background-color: #ABE7B2;
     height: 60px;
+    color: #001220;
+}
+
+.card_about {
+    outline: 2px solid #ECF4E8;
+}
+
+.card_body_about {
+    background-color: #93BFC7;
+    /* outline: 2px solid #ECF4E8; */
+    background-image: url("../img/svg_asset/about.svg");
+    height: 330px;
+    overflow: hidden;
+    color: #000;
+    border-left: 2px solid #fff;
+}
+
+.inner_card_about {
+    overflow: hidden;
+}
+
+.img_about {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+}
+
+.img_about img {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.img_about::before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
 }
 
 .text-justify {
@@ -142,9 +189,12 @@ body::-webkit-scrollbar {
 #service {
     height: auto;
     padding-bottom: 20px;
-    border-top: 10px solid white;
-    background-color: #778873;
+    border-top: 2px solid #000;
+    background-image: url("../img/svg_asset/servive.svg");
+    background-image: url("../img/svg_asset/service_layer2.svg");
     /* border: 5px solid red; */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .service_container {
@@ -172,6 +222,9 @@ body::-webkit-scrollbar {
 
 .our-services p {
     text-align: justify;
+    height: 200px;
+    /* outline: 5px solid black; */
+    margin-top: 20px;
 }
 
 .our-services .icon {
@@ -259,6 +312,11 @@ body::-webkit-scrollbar {
     top: 0;
 }
 
+.btn_color {
+    background-color: #0D1317;
+    color: #fff;
+}
+
 .btn_product1,
 .btn_product2,
 .btn_product3,
@@ -303,11 +361,13 @@ body::-webkit-scrollbar {
 
 /* Contact */
 #contact {
-    background-image: url("../img/kate-sade-_WO_STod-74-unsplash.jpg");
+    /* background-image: url("../img/kate-sade-_WO_STod-74-unsplash.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 100%; */
+    background: linear-gradient(135deg, #232526 0%, #414345 100%);
     width: 100%;
     height: 800px;
+    outline: 5px solid rebeccapurple;
 }
 
 .head {
@@ -373,6 +433,10 @@ body::-webkit-scrollbar {
 
 .enabled {
     display: block;
+}
+
+.form_title {
+    font-size: 4rem;
 }
 
 /* Akhir Contact */
