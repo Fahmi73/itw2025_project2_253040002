@@ -452,6 +452,7 @@ body::-webkit-scrollbar {
 
     .card_about {
         display: flex;
+        height: 1200px;
         flex-direction: column;
     }
 
