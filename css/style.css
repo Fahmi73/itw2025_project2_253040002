@@ -132,7 +132,7 @@ body::-webkit-scrollbar {
 
 .card_body_about p {
     color: var(--p_color);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 .img_about {
