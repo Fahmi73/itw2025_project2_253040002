@@ -130,10 +130,9 @@ body::-webkit-scrollbar {
     overflow: hidden;
 }
 
-.card_body_about p,
-.card_body_about h1 {
+.card_body_about p {
     color: var(--p_color);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .img_about {
