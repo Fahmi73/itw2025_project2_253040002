@@ -57,69 +57,47 @@
     <!-- Akhir Navbar -->
 
     <!-- Hero -->
-    <section class="hero">
-        <div id="carouselExampleControls"
-            class="carousel slide w-100 h-100 d-flex justify-content-center align-items-center m-0"
-            data-bs-ride="carousel">
-            <div class="carousel-inner">
+    <section id="hero">
 
-                <div class="carousel-item active w-100">
-                    <div class="hero_card_container rounded-4 p-5 h-100 col-md-6 mx-md-auto mx-2">
-                        <div class="media_card">
-                            <h1 class="fw-bold fs-1" id="logo_hero">Furni</h1>
-                            <h4 class="mb-2 fs-2">Design Your Comfort.</h4>
-                            <div>
-                                <p class="fs-4">Explore our premium furniture collections for modern workspaces and
-                                    homes.</p>
+        <div class="hero_container container">
+
+            <div class="hero_inner row justify-content-center w-80 shadow-lg rounded-5">
+
+                <div class="hero rounded-5 p-0">
+                    <img src="img/spacejoy-RqO6kwm4tZY-unsplash.jpg" alt="" class="rounded-5">
+                </div>
+                <div class="hero_description row">
+                    <div class="col-lg-8">
+                        <h2 class="display-3">Your Modern Living & Interior Expert</h2>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="row my-1 my-lg-0 g-2 g-lg-1">
+                            <div class="col-6">
+                                <h2 class="fw-bold hero_indicator mb-0">15K+</h2>
+                                <p class="text-secondary small">Happy Customers</p>
                             </div>
-                            <button type="button" class="btn_color btn btn-lg">Get Started</button>
+
+                            <div class="col-6">
+                                <h2 class="fw-bold hero_indicator mb-0">300+</h2>
+                                <p class="text-secondary small">Award Winning</p>
+                            </div>
+
+                            <div class="col-6">
+                                <h2 class="fw-bold hero_indicator mb-0">50+</h2>
+                                <p class="text-secondary small">Branch Stores</p>
+                            </div>
+
+                            <div class="col-6">
+                                <h2 class="fw-bold hero_indicator mb-0">24/7</h2>
+                                <p class="text-secondary small">Customer Support</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-
-                <div class="carousel-item">
-                    <div class="hero_card_container rounded-4 p-5  h-100 col-md-6 mx-md-auto mx-2">
-                        <div class="media_card">
-                            <h1 class="fw-bold fs-1" id="logo_hero">Furni</h1>
-                            <h4 class="mb-2 fs-2">Crafting Your Perfect Space.</h4>
-                            <div>
-                                <p class="fs-4 mb-2">Discover functional, beautiful furniture solutions for every
-                                    corner of your home or office.</p>
-                            </div>
-                            <button type="button" class="btn_color btn btn-lg">Get Started</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="hero_card_container rounded-4 p-5 h-100 col-md-6 mx-md-auto mx-2">
-                        <div class="media_card">
-                            <h1 class="fw-bold fs-1" id="logo_hero">Furni</h1>
-                            <h4 class="mb-2 fs-2">Quality That Endures.</h4>
-                            <div>
-                                <p class="fs-4">Invest in furniture crafted with precision and materials designed to
-                                    last a lifetime.</p>
-                            </div>
-                            <button type="button" class="btn_color btn btn-lg">Get Started</button>
-                        </div>
-                    </div>
-
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="prev_icon fs-1" aria-hidden="true">
-                        <i class="ri-arrow-left-s-line" style="color: #009970;"></i>
-                    </span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="next_icon fs-1" aria-hidden="true">
-                        <i class="ri-arrow-right-s-line" style="color: #009970;"></i>
-                    </span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
+        </div>
+
 
     </section>
     <!-- Akhir Hero -->
@@ -127,12 +105,13 @@
     <!-- About -->
     <section id="about" class="about_section d-flex justify-content-center align-items-center flex-column">
 
-        <div class="card_about" style="width: 100%;">
+        <div class="container-fluid card_about" style="width: 100%;">
 
-            <div class="inner_card_about row g-0 shadow-sm shadow-lg">
+            <div class="row inner_card_about g-0 shadow-sm">
 
                 <div class="img_about col-md-6 ">
-                    <img src="img/kam-idris-_HqHX3LBN18-unsplash.jpg" class="img-fluid" alt="...">
+                    <img src="img/kam-idris-_HqHX3LBN18-unsplash.jpg" class="img-fluid w-100 h-100"
+                        style="object-fit: cover;" alt="...">
                 </div>
 
                 <div class="p_about col-md-6">
@@ -164,94 +143,156 @@
 
     <!-- Service -->
     <section id="service">
-        <div class="container-fluid service_container mb-5">
-            <div class="wraper w-100 d-flex justify-content-center">
-                <div class="text-center mt-3 bg-light col-9 col-md-6 text-center p-3 rounded-5 shadow-lg">
-                    <h1>Our Services</h1>
+
+
+        <div class="container-fluid p-5">
+            <div class="row justify-content-center">
+                <div class="box_header_service rounded-4 shadow-sm col-lg-6 border border-4">
+                    <h1 class="text-center">Our Service</h1>
                 </div>
             </div>
 
-            <div class="row justify-content-center">
-                <div class="col-md-5">
-                    <div class="box">
-                        <div class="our-services consult">
-                            <div class="icon"><img src="img/icons8-consultation-32.png" alt=""></div>
-                            <h4>In-Person or Virtual Consultation</h4>
-                            <p>Assisting clients in realizing their vision with expert guidance. The Furni design team
-                                offers advice on layout planning, color palettes, and product recommendations tailored
-                                to the client's style and budget.</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="row justify-content-center mt-5">
 
-                <div class="col-md-5">
-                    <div class="box">
-                        <div class="our-services Customization">
-                            <div class="icon"><img src="img/icons8-custom-48.png" alt=""></div>
-                            <h4>Bespoke & Custom Furniture (Customization)</h4>
-                            <p>We offer full custom manufacturing, allowing you to tailor size, material, fabric, and
-                                finish to your exact needs. This service is ideal for clients seeking truly unique
-                                pieces or those requiring specific dimensions for challenging spaces. It emphasizes
-                                quality and personalization over mass production.</p>
-                        </div>
-                    </div>
-                </div>
+                <div class="col-lg-12">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-lg-4">
+                            <div class="box_service border border-5 p-5 rounded-4 shadow-sm">
 
-                <div class="col-md-5">
-                    <div class="box">
-                        <div class="our-services Delivery">
-                            <div class="icon"><img src="img/icons8-delivery-protection-50.png" alt=""></div>
-                            <h4>Insured Delivery & Expert Installation</h4>
-                            <p>Enjoy a completely hassle-free experience with our end-to-end logistics. We provide fully
-                                insured, secure delivery straight to your location. Our team of highly trained
-                                technicians will then perform professional installation, ensuring every piece is
-                                assembled correctly and ready for immediate use, with no effort required on your part.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                                <div class="icon">
+                                    <img class="img-fluid" src="img/icons8-consultation-64.png" alt="">
+                                </div>
 
-                <div class="col-md-5">
-                    <div class="box">
-                        <div class="our-services Warranty">
-                            <div class="icon"><img src="img/icons8-warranty-50.png" alt=""></div>
-                            <h4>Long-Term Structural Warranty</h4>
-                            <p>Furni stands by the quality of its craftsmanship. We offer an extended 5-Year Structural
-                                Warranty against defects in the primary framework (frames, bases, and core mechanisms)
-                                of our signature furniture pieces. This commitment provides peace of mind, affirming
-                                your investment in long-lasting quality.</p>
-                        </div>
-                    </div>
-                </div>
+                                <div class="my-3">
+                                    <p class="mb-0 fs-4">In-Person or Virtual Consultation</p>
+                                </div>
 
-                <div class="col-md-5">
-                    <div class="box">
-                        <div class="our-services Sourcing">
-                            <div class="icon"><img src="img/icons8-commercial-64.png" alt=""></div>
-                            <h4>Commercial & Project Sourcing</h4>
-                            <p>We act as reliable partners for commercial projects, including offices, hotels, and
-                                architectural developments. This service provides bulk pricing, dedicated project
-                                consultation, and the ability to fulfill high-volume orders with full customization
-                                capabilities, meeting the rigorous standards of corporate design.</p>
-                        </div>
-                    </div>
-                </div>
+                                <div class="h-100 ">
+                                    Assisting clients in realizing their vision with expert guidance. The Furni design
+                                    team
+                                    offers advice on layout planning, color palettes, and product recommendations
+                                    tailored
+                                    to the client's style and budget.
+                                </div>
 
-                <div class="col-md-5">
-                    <div class="box">
-                        <div class="our-services Support">
-                            <div class="icon"><img src="img/icons8-support-64.png" alt=""></div>
-                            <h4>Flexible Returns and Dedicated Support</h4>
-                            <p>We stand behind our designs and your satisfaction is our priority. Furni offers a 30-Day
-                                Happiness Guarantee, providing flexible options for returns or exchanges if the piece
-                                doesn't perfectly fit your space or vision. Furthermore, every purchase includes access
-                                to a dedicated technical support line for quick assistance regarding assembly, function,
-                                or material care.</p>
+                            </div>
                         </div>
+                        <div class="col-lg-4">
+
+                            <div class="box_service border border-5 p-5 rounded-4 shadow-sm">
+
+                                <div class="icon">
+                                    <img class="img-fluid" src="img/icons8-custom-64.png" alt="">
+                                </div>
+
+                                <div class="my-3">
+                                    <p class="mb-0 fs-4">Bespoke & Custom Furniture (Customization)</p>
+                                </div>
+
+                                <div class="h-100 ">
+                                    We offer full custom manufacturing, allowing you to tailor size, material, fabric,
+                                    and
+                                    finish to your exact needs. This service is ideal for clients seeking truly unique
+                                    pieces or those requiring specific dimensions for challenging spaces. It emphasizes
+                                    quality and personalization over mass production.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="box_service border border-5 p-5 rounded-4 shadow-sm">
+
+                                <div class="icon">
+                                    <img class="img-fluid" src="img/icons8-delivery-64.png" alt="">
+                                </div>
+
+                                <div class="my-3">
+                                    <p class="mb-0 fs-4">Insured Delivery & Expert Installation</p>
+                                </div>
+
+                                <div class="h-100 ">
+                                    Enjoy a completely hassle-free experience with our end-to-end logistics. We provide
+                                    fully
+                                    insured, secure delivery straight to your location. Our team of highly trained
+                                    technicians will then perform professional installation, ensuring every piece is
+                                    assembled correctly and ready for immediate use, with no effort required on your
+                                    part.
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="box_service border border-5 p-5 rounded-4  shadow-sm">
+
+                                <div class="icon">
+                                    <img class="img-fluid" src="img/icons8-warranty-64.png" alt="">
+                                </div>
+
+                                <div class="my-3">
+                                    <p class="mb-0 fs-4">Long-Term Structural Warranty</p>
+                                </div>
+
+                                <div class="h-100 ">
+                                    Furni stands by the quality of its craftsmanship. We offer an extended 5-Year
+                                    Structural
+                                    Warranty against defects in the primary framework (frames, bases, and core
+                                    mechanisms)
+                                    of our signature furniture pieces. This commitment provides peace of mind, affirming
+                                    your investment in long-lasting quality
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="box_service border border-5 p-5 rounded-4 shadow-sm">
+
+                                <div class="icon">
+                                    <img class="img-fluid" src="img/icons8-commercial-64.png" alt="">
+                                </div>
+
+                                <div class="my-3">
+                                    <p class="mb-0 fs-4">Commercial & Project Sourcing</p>
+                                </div>
+
+                                <div class="h-100 ">
+                                    We act as reliable partners for commercial projects, including offices, hotels, and
+                                    architectural developments. This service provides bulk pricing, dedicated project
+                                    consultation, and the ability to fulfill high-volume orders with full customization
+                                    capabilities, meeting the rigorous standards of corporate design.
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="box_service border border-5 p-5 rounded-4 shadow-sm">
+
+                                <div class="icon">
+                                    <img class="img-fluid" src="img/icons8-support-64.png" alt="">
+                                </div>
+
+                                <div class="my-3">
+                                    <p class="mb-0 fs-4">Flexible Returns and Dedicated Support</p>
+                                </div>
+
+                                <div class="h-100 ">
+                                    We stand behind our designs and your satisfaction is our priority. Furni offers a
+                                    30-Day
+                                    Happiness Guarantee, providing flexible options for returns or exchanges if the
+                                    piece
+                                    doesn't perfectly fit your space or vision. Furthermore, every purchase includes
+                                    access
+                                    to a dedicated technical support line for quick assistance regarding assembly,
+                                    function,
+                                    or material care.
+                                </div>
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- Akhir Service -->
@@ -259,120 +300,59 @@
     <!-- Product -->
 
     <section id="product" class="product_section">
-        <div class="product_container container-fluid d-flex flex-column justify-content-center align-items-center">
-            <div class="item_place p-5">
-                <div class="product_header mb-5 d-flex justify-content-center bg-light rounded-4">
-                    <h1 class="">Featured Product</h1>
+
+        <div class="container-fluid p-3 p-sm-5">
+            <div class="row g-3">
+                <div class="product_header_container col-lg-12 shadow-lg rounded-3">
+                    <div class="row align-items-center mx-2 flex-column-reverse flex-sm-row p-2 p-sm-5">
+                        <div class="col-lg-6">
+                            <div class="header_product p-3 p-sm-0">
+                                <p class="display-2">Elevate Your Living Space</p>
+                                <p class="fs-4">Discover unique designs that blend modern aesthetics with pure comfort.
+                                    Make your
+                                    home stand out.</p>
+                                <button class="btn btn-primary fs-4 rounded-5 p-3">Shop Now</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="foto_header_product text-end">
+                                <img src="img/product/sofas-accent-chairs-sangria-red-soft-velvet-touch-fabric-islay-love-seat-sofa-45-46575264858403-removebg-preview.png"
+                                    class="img-fluid" style="height: 500px;" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="inner_item d-flex flex-wrap align-items-center justify-content-center">
+                <div class="col-lg-12">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div
+                                class="box_product d-flex align-items-center rounded-3 p-5 shadow-lg flex-column-reverse flex-sm-row">
+                                <div class="product_desc">
+                                    <p class="fs-4">Modern Geometric Drawer</p>
+                                    <p class="fs-6">Keep your space organized with style. Compact design with spacious
+                                        storage for your daily essentials.</p>
 
-                    <div class="item1 me-md-3">
+                                    <button class="btn btn-primary">Shop Now</button>
+                                </div>
 
-                        <div class="item_card position-relative d-flex flex-column bg-light shadow-lg rounded-2 p-2">
-                            <div class="discount position-absolute">
-                                <p class="text-white bg-dark p-2 rounded-2"><i class="fa-solid fa-arrow-down"></i> -29%
-                                </p>
-                            </div>
-                            <div class="icons1 position-absolute d-flex flex-column">
-                                <a href="" class="text-dark fs-4"><i class="fa-solid fa-eye"></i></a>
-                                <a href="" class="text-dark fs-4"><i class="fa-solid fa-heart"></i></a>
-                            </div>
-
-                            <img src="img/product/Untitled-4-1024x1024-removebg-preview.png" alt=""
-                                class="img-fluid rounded-2 product1">
-
-                            <div class="btn_product1 btn position-absolute">
-                                <button class="btn btn-light rounded-pill"><i class="fa-solid fa-cart-shopping"></i>Add
-                                    to
-                                    Cart</button>
+                                <img src="img/product/drawer-removebg-preview.png" class="img-fluid" alt="">
                             </div>
                         </div>
-                        <div class="item_name mt-2 mx-1">
-                            <h3>Modern Chair</h3>
-                            <p>$78,56</p>
-                        </div>
-                    </div>
-                    <div class="item2 me-md-3">
+                        <div class="col-lg-6">
+                            <div
+                                class="box_product rounded-3 d-flex align-items-center p-5 shadow-lg flex-column-reverse flex-sm-row">
+                                <div class="product_desc">
+                                    <p class="fs-4">Ergonomic Pro Gaming Chair</p>
+                                    <p class="fs-6">Level up your comfort. Designed with premium lumbar support for long
+                                        gaming sessions or work-from-home.</p>
 
-                        <div class="item_card position-relative d-flex flex-column bg-light shadow-lg rounded-2 p-2">
-                            <div class="discount position-absolute">
-                                <p class="text-white bg-dark p-2 rounded-2"><i class="fa-solid fa-arrow-down"></i> -19%
-                                </p>
+                                    <button class="btn btn-primary">Shop Now</button>
+                                </div>
+                                <img src="img/product/Untitled-4-1024x1024-removebg-preview.png" style="width: 300px;"
+                                    class="img-fluid" alt="">
                             </div>
-                            <div class="icons2 position-absolute d-flex flex-column">
-                                <a href="" class="text-dark fs-4"><i class="fa-solid fa-eye"></i></a>
-                                <a href="" class="text-dark fs-4"><i class="fa-solid fa-heart"></i></a>
-                            </div>
-
-                            <img src="img/product/drawer-removebg-preview.png" alt=""
-                                class="img-fluid rounded-2 product2">
-
-                            <div class="btn_product2 btn position-absolute">
-                                <button class="btn btn-light rounded-pill"><i class="fa-solid fa-cart-shopping"></i>Add
-                                    to
-                                    Cart</button>
-                            </div>
-                        </div>
-                        <div class="item_name mt-2 mx-1">
-                            <h3>Wood Mobile Pedestal</h3>
-                            <p>$95,29</p>
                         </div>
                     </div>
-
-                    <div class="item3 me-md-3">
-
-                        <div class="item_card position-relative d-flex flex-column bg-light shadow-lg rounded-2 p-2">
-                            <div class="discount position-absolute">
-                                <p class="text-white bg-dark p-2 rounded-2"><i class="fa-solid fa-arrow-down"></i> -13%
-                                </p>
-                            </div>
-                            <div class="icons3 position-absolute d-flex flex-column">
-                                <a href="" class="text-dark fs-4"><i class="fa-solid fa-eye"></i></a>
-                                <a href="" class="text-dark fs-4"><i class="fa-solid fa-heart"></i></a>
-                            </div>
-
-                            <img src="img/product/51Sqe-SCZ5L._SL1500_-removebg-preview.png" alt=""
-                                class="img-fluid rounded-2 product3">
-
-                            <div class="btn_product3 btn position-absolute">
-                                <button class="btn btn-light rounded-pill"><i class="fa-solid fa-cart-shopping"></i>Add
-                                    to
-                                    Cart</button>
-                            </div>
-                        </div>
-                        <div class="item_name mt-2 mx-1">
-                            <h3>Motion 2 Gaming</h3>
-                            <p>$415</p>
-                        </div>
-                    </div>
-
-                    <div class="item4 me-md-3">
-
-                        <div class="item_card position-relative d-flex flex-column bg-light shadow-lg rounded-2 p-2">
-                            <div class="discount position-absolute">
-                                <p class=" text-white bg-dark p-2 rounded-2"><i class="fa-solid fa-arrow-down"></i> -30%
-                                </p>
-                            </div>
-                            <div class="icons4 position-absolute d-flex flex-column">
-                                <a href="" class="text-dark fs-4"><i class="fa-solid fa-eye"></i></a>
-                                <a href="" class="text-dark fs-4"><i class="fa-solid fa-heart"></i></a>
-                            </div>
-
-                            <img src="img/product/sofas-accent-chairs-sangria-red-soft-velvet-touch-fabric-islay-love-seat-sofa-45-46575264858403-removebg-preview.png"
-                                alt="" class="img-fluid rounded-2 product4">
-
-                            <div class="btn_product4 btn position-absolute">
-                                <button class="btn btn-light rounded-pill"><i class="fa-solid fa-cart-shopping"></i>Add
-                                    to
-                                    Cart</button>
-                            </div>
-                        </div>
-                        <div class="item_name mt-2 mx-1">
-                            <h3>Love Seat Sofa</h3>
-                            <p>$378</p>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -382,14 +362,15 @@
 
     <!-- Contact -->
 
-    <section id="contact" class="d-flex align-items-center">
-        <div class="form container py-5">
+    <section id="contact" class="d-flex align-items-center p-lg-5 my-5">
+        <div class="form container-fluid py-5">
             <div class="row">
-                <div class=" col-lg-7">
-                    <div class="card" style="width: 100%;">
-                        <div class="card-body">
-                            <h1 class="form_title card-title my-4">We'd Love To <br>Hear Any Feedback From You</h1>
-                            <p class="card-text">Your thoughts and satisfaction are our top priority. Please share your
+                <div class="col-lg-7 my-5">
+                    <div class="card shadow-sm rounded-4" style="width: 100%;">
+                        <div class="card-body p-lg-5">
+                            <h1 class="form_title card-title">We'd Love To Hear Any Feedback From You</h1>
+                            <p class="card-text fs-4">Your thoughts and satisfaction are our top priority. Please share
+                                your
                                 feedback, inquiries, or suggestions with us. We are constantly striving to improve our
                                 collections to better suit your modern lifestyle."</p>
                             <a href="#" class="card-link">Card link</a>
@@ -398,7 +379,7 @@
                     </div>
                 </div>
                 <div class="col-lg-5 m-auto">
-                    <div class="card">
+                    <div class="card shadow-sm">
                         <div class="card-body">
                             <div class="head text-center text-white py-3 rounded-4 bg-primary">
                                 <h3>Contact Us</h3>
@@ -413,28 +394,29 @@
                                         telah
                                         terkirim</div>
                                     <div class="form_row d-flex flex-row my-5">
-                                        <div class="input_form col-lg-6 me-3">
-                                            <input type="text" name="firstname" class="effect_1 w-100"
+                                        <div class="input_form col-lg-6 me-1">
+                                            <input type="text" name="firstname" class="effect_1 w-100 rounded-1 ps-4"
                                                 placeholder="First Name">
                                         </div>
                                         <div class="input_form col-lg-6">
-                                            <input type="text" name="lastname" class="effect_1 w-100"
+                                            <input type="text" name="lastname" class="effect_1 w-100 rounded-1 ps-4"
                                                 placeholder="Last Name">
                                         </div>
                                     </div>
                                     <div class="form_row pb-4">
                                         <div class="input_form col-lg-12">
-                                            <input type="email" name="email" class="effect_1 w-100" placeholder="Email">
+                                            <input type="email" name="email" class="effect_1 w-100 rounded-1 ps-4"
+                                                placeholder="Email">
                                         </div>
                                     </div>
                                     <div class="form_row pt-5 mb-3">
                                         <div class="input_form col-lg-12">
-                                            <input type="text" name="message" class="effect_1 w-100"
+                                            <input type="text" name="message" class="effect_1 w-100 rounded-1 ps-4"
                                                 placeholder="Your Messages">
                                         </div>
                                     </div>
                                     <div class="form-row pt-4">
-                                        <div class="col-lg-4">
+                                        <div class="col-lg-5">
                                             <button type="submit" class="btn submitbtn btn-primary">Send
                                                 Messages</button>
                                         </div>
@@ -458,7 +440,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/53436f57b5.js" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 
     <script>

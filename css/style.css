@@ -10,6 +10,7 @@ body::-webkit-scrollbar {
 :root {
     --primary_color: #f9f5eb;
     --secondary_color: #e4efe7;
+    --third_color: #F1F3E0;
     --button_color: #124170;
     --button_color_hover: hsl(210, 72%, 35%);
     --button_color_active: hsl(210, 72%, 55%);
@@ -83,12 +84,39 @@ body::-webkit-scrollbar {
     text-shadow: 1px 1px 2px #fff;
 }
 
+#hero {
+    position: relative;
+}
+
 .hero {
     width: 100%;
-    height: 800px;
-    background-size: cover;
-    background-image: url("../img/spacejoy-RqO6kwm4tZY-unsplash.jpg");
+    height: 500px;
+    position: absolute;
+    top: -100px
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero_description {
+    padding-top: 410px;
+}
+
+.hero_container {
+    padding: 20px;
+}
+
+.hero_indicator {
+    color: var(--button_color);
+}
+
+.hero_inner {
     position: relative;
+    height: 100%;
 }
 
 .hero::after {
@@ -161,95 +189,34 @@ body::-webkit-scrollbar {
 #service {
     height: auto;
     padding-bottom: 20px;
-    background-image: url("../img/svg_asset/servive.svg");
-    background-image: url("../img/svg_asset/service_layer2.svg");
-    /* border: 5px solid red; */
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+.box_service {
+    background-color: var(--secondary_color);
+}
+
+.box_header_service {
+    background-color: var(--secondary_color);
 }
 
 .service_container {
     margin-top: 50px;
 }
 
-.box {
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.our-services {
-    margin-top: 75px;
-    padding-bottom: 30px;
-    padding: 2px 60px;
-    /* height: 40%; */
-    text-align: center;
-    border-radius: 10px;
-    background-color: #fff;
-    transition: all 0.4s ease-in-out;
-    box-shadow: 0 0 25px rgba(20, 27, 202, 17);
-}
-
-.our-services p {
-    text-align: justify;
-    /* outline: 5px solid black; */
-    margin-top: 20px;
-}
-
-.our-services .icon {
-    margin-bottom: -20px;
-    transform: translateY(-50%);
-    text-align: center;
-}
-
-.our-services:hover h4,
-.our-services:hover p {
-    color: white;
-}
-
-.consult:hover {
-    background-color: hsl(300, 79%, 44%);
-    box-shadow: 0 0 25px hsl(300, 79%, 24%);
-    cursor: pointer;
-}
-
-.Customization:hover {
-    background-color: hsl(175, 77%, 47%);
-    box-shadow: 0 0 25px hsl(175, 77%, 27%);
-    cursor: pointer;
-}
-
-.Delivery:hover {
-    background-color: hsl(89, 31%, 44%);
-    box-shadow: 0 0 25px hsl(89, 31%, 24%);
-    cursor: pointer;
-}
-
-.Warranty:hover {
-    background-color: hsl(29, 76%, 23%);
-    box-shadow: 0 0 25px hsl(29, 76%, 43%);
-    cursor: pointer;
-}
-
-.Sourcing:hover {
-    background-color: hsl(0, 100%, 21%);
-    box-shadow: 0 0 25px hsl(0, 100%, 41%);
-    cursor: pointer;
-}
-
-.Support:hover {
-    background-color: hsl(38, 89%, 21%);
-    box-shadow: 0 0 25px hsl(38, 89%, 41%);
-    cursor: pointer;
-}
 
 /* Akhir Services */
 
 /* Product */
+.product_header_container {
+    background-color: var(--third_color);
+}
+
+.box_product {
+    background-color: var(--third_color);
+}
+
 .product_section {
-    border-top: 10px solid white;
-    background-color: #90ab8b;
+    background-color: var(--primary_color);
 }
 
 .product_container {
@@ -262,6 +229,7 @@ body::-webkit-scrollbar {
 
 .item_card {
     overflow: hidden;
+    background-color: var(--secondary_color);
 }
 
 .icons1,
@@ -340,13 +308,11 @@ body::-webkit-scrollbar {
 
 /* Contact */
 #contact {
-    /* background-image: url("../img/kate-sade-_WO_STod-74-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%; */
-    background: linear-gradient(135deg, #232526 0%, #414345 100%);
     width: 100%;
-    height: 800px;
-    outline: 5px solid rebeccapurple;
+}
+
+.card {
+    background-color: var(--secondary_color);
 }
 
 .head {
@@ -447,6 +413,14 @@ body::-webkit-scrollbar {
 /* Breakpoin Handphone */
 @media (max-width: 600px) {
 
+
+    /* hero */
+    #hero {
+        position: relative;
+        height: 740px;
+    }
+
+    /* end hero */
 
     /* about */
 
