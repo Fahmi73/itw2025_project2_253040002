@@ -15,6 +15,10 @@ body::-webkit-scrollbar {
     --button_color_hover: hsl(210, 72%, 35%);
     --button_color_active: hsl(210, 72%, 55%);
     --p_color: #000;
+
+    --font_primary: "Montserrat";
+    --font_paragraprh: "Comfortaa";
+    --font_header: "Open Sans";
 }
 
 /* Navbar */
@@ -84,6 +88,10 @@ body::-webkit-scrollbar {
     text-shadow: 1px 1px 2px #fff;
 }
 
+.hero_header {
+    font-family: var(--font_primary);
+}
+
 #hero {
     position: relative;
 }
@@ -135,6 +143,15 @@ body::-webkit-scrollbar {
 /* akhir Hero */
 
 /* About */
+.about_header {
+    font-family: var(--font_primary);
+}
+
+.text-muted {
+    font-family: var(--font_header);
+    font-style: italic;
+}
+
 .about_section {
     max-height: 1024px;
 }
@@ -150,6 +167,10 @@ body::-webkit-scrollbar {
 .p_about {
     display: flex;
     align-items: center;
+}
+
+.desc {
+    font-family: var(--font_paragraprh);
 }
 
 .card_body_about {
@@ -189,14 +210,20 @@ body::-webkit-scrollbar {
 #service {
     height: auto;
     padding-bottom: 20px;
+    font-family: var(--font_paragraprh);
 }
 
 .box_service {
     background-color: var(--secondary_color);
 }
 
+.service_box_header {
+    font-family: var(--font_primary);
+}
+
 .box_header_service {
     background-color: var(--secondary_color);
+    font-family: var(--font_primary);
 }
 
 .service_container {
@@ -209,6 +236,11 @@ body::-webkit-scrollbar {
 /* Product */
 .product_header_container {
     background-color: var(--third_color);
+    font-family: var(--font_paragraprh);
+}
+
+.text_header_product {
+    font-family: var(--font_primary);
 }
 
 .box_product {
