@@ -348,7 +348,7 @@ body::-webkit-scrollbar {
 }
 
 .head {
-    background-color: #00b383;
+    background-color: var(--button_color);
     border-radius: 5px solid;
     margin-top: -40px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
